@@ -99,7 +99,7 @@ export default function AboutPage() {
           <div className="text-center" data-aos="zoom-in-up" data-aos-delay="300">
             <a
               href="/impact"
-              className="bg-indigo-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
+              className="bg-indigo-700 text-white px-8 py-3 rounded-md font-medium hover:bg-indigo-500 transition-colors duration-200"
             >
               See Our Impact
             </a>
