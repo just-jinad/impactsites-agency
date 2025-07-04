@@ -16,7 +16,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             <Logo />
             <p className="text-sm text-gray-600">
-              &copy; {new Date().getFullYear()} Nambu Shalom Ministries. All rights reserved.
+              &copy; {new Date().getFullYear()} Impactsites. All rights reserved.
             </p>
           </div>
 
@@ -24,11 +24,11 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium">Explore</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/programs" className="text-gray-600 hover:text-gray-900">Programs</Link></li>
-              <li><Link href="/impact" className="text-gray-600 hover:text-gray-900">Impact Stories</Link></li>
-              <li><Link href="/donate" className="text-gray-600 hover:text-gray-900">Donate</Link></li>
-              <li><Link href="/volunteer" className="text-gray-600 hover:text-gray-900">Volunteer</Link></li>
-              <li><Link href="/faq" className="text-gray-600 hover:text-gray-900">FAQs</Link></li>
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">Programs</Link></li>
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">Impact Stories</Link></li>
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">Donate</Link></li>
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">Volunteer</Link></li>
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">FAQs</Link></li>
             </ul>
           </div>
 
@@ -37,9 +37,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <h3 className="text-sm font-medium">About</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="text-gray-600 hover:text-gray-900">Our Mission</Link></li>
-              <li><Link href="/vision" className="text-gray-600 hover:text-gray-900">Vision & Values</Link></li>
-              <li><Link href="/team" className="text-gray-600 hover:text-gray-900">Our Team</Link></li>
-              <li><Link href="/partners" className="text-gray-600 hover:text-gray-900">Partners</Link></li>
+              <li><Link href="/about" className="text-gray-600 hover:text-gray-900">Vision & Values</Link></li>
+              {/* <li><Link href="/t" className="text-gray-600 hover:text-gray-900">Our Team</Link></li> */}
+              {/* <li><Link href="/partners" className="text-gray-600 hover:text-gray-900">Partners</Link></li> */}
             </ul>
           </div>
 
@@ -48,8 +48,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <h3 className="text-sm font-medium">Connect</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact Us</Link></li>
-              <li><Link href="mailto:info@nambushalom.org" className="text-gray-600 hover:text-gray-900">info@nambushalom.org</Link></li>
-              <li><Link href="/newsletter" className="text-gray-600 hover:text-gray-900">Newsletter</Link></li>
+              {/* <li><Link href="mailto:info@nambushalom.org" className="text-gray-600 hover:text-gray-900">info@nambushalom.org</Link></li> */}
+              <li><Link href="/#" className="text-gray-600 hover:text-gray-900">Newsletter</Link></li>
             </ul>
           </div>
 
