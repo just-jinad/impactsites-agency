@@ -57,9 +57,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium">Follow Us</h3>
             <ul className="flex gap-2">
-              <li><Link href="https://facebook.com" className="text-blue-500 hover:text-blue-600" aria-label="Facebook">FB</Link></li>
-              <li><Link href="https://twitter.com" className="text-blue-500 hover:text-blue-600" aria-label="Twitter">X</Link></li>
-              <li><Link href="https://instagram.com" className="text-blue-500 hover:text-blue-600" aria-label="Instagram">IG</Link></li>
+              <li><Link href="https://facebook.com" className="text-gray-500 hover:text-gray-600" aria-label="Facebook">FB</Link></li>
+              <li><Link href="https://twitter.com" className="text-gray-500 hover:text-gray-600" aria-label="Twitter">X</Link></li>
+              <li><Link href="https://instagram.com" className="text-gray-500 hover:text-gray-600" aria-label="Instagram">IG</Link></li>
             </ul>
           </div>
         </div>

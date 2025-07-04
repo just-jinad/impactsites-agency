@@ -34,7 +34,7 @@ export default function LargeTestimonial() {
             <div className="text-sm font-medium text-gray-500">
               <span className="text-gray-700">Pastor Amos Adebayo</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="https://nsrm.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a className="text-black italic" href="https://nsrm.vercel.app" target="_blank" rel="noopener noreferrer">
                 Director, Nambu Shalom Rural Ministry
               </a>
             </div>
