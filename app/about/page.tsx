@@ -44,10 +44,10 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16" data-aos="fade-up">
-            <p className="text-sm font-medium text-indigo-700 uppercase tracking-wide mb-4">
+            <p className="text-sm font-medium mt-10 text-indigo-700 uppercase tracking-wide mb-4">
               About ImpactSites
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight ">
               Websites That Power Purpose
             </h1>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
@@ -76,7 +76,7 @@ export default function AboutPage() {
             <div>
               <div className="flex items-center mb-4">
                 <Eye className="w-6 h-6 text-indigo-500 mr-3" />
-                <h2 className="text-2xl font-bold text-white">Our Vision</h2>
+                <h2 className="text-2xl font-bold ">Our Vision</h2>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 To see every impact-driven organization — from rural charities to global initiatives — fully
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <div>
               <div className="flex items-center mb-4">
                 <Compass className="w-6 h-6 text-indigo-500 mr-3" />
-                <h2 className="text-2xl font-bold text-white">Our Mission</h2>
+                <h2 className="text-2xl font-bold ">Our Mission</h2>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 We exist to design and build websites for changemakers. We simplify the tech, handle the heavy lifting,
