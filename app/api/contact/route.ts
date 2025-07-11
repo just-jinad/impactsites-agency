@@ -1,14 +1,18 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+  throw new Error('SMTP configuration is missing');
+}
+
 // Email configuration
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
   secure: false,
   auth: {
-    user: 'isaacjinad@gmail.com',
-    pass: 'mxtuggodzzxinaog'
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
   }
 });
 
@@ -17,10 +21,10 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { organizationName, website, mission, goal, fullName, email, phone } = data;
 
-    // Email to admin (you)
+    // Email to admin
     const adminMailOptions = {
-      from: 'isaacjinad@gmail.com',
-      to: 'isaacjinad@gmail.com',
+      from: process.env.SMTP_FROM,
+      to: process.env.ADMIN_EMAIL,
       subject: `New ImpactSite Application from ${organizationName}`,
       html: `
         <h2>New Website Application</h2>
@@ -41,7 +45,7 @@ export async function POST(request: Request) {
 
     // Confirmation email to the applicant
     const userMailOptions = {
-      from: 'isaacjinad@gmail.com',
+      from: process.env.SMTP_FROM,
       to: email,
       subject: 'Your ImpactSite Application Received',
       html: `
