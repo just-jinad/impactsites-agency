@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "Impactsites Agency",
-  description: "A website to help Charity organisations and other Foundations, have an online presence, giving them the needed visibilty.",
+  description: "A website to help Charity organizations and other Foundations, have an online presence, giving them the needed visibilty.",
 };
 
 export default function RootLayout({
